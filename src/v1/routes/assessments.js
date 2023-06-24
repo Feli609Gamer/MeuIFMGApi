@@ -19,7 +19,6 @@ api.get('/', middleware, async (req, res, next) => {
 
         const { SERVER_HOST } = process.env
 
-        // POR MOTIVOS DESCONHECIDOS, QUANDO EU COLOCO O LINK DA ENV O REQUEST NÃO VAI!
         const response = await fetch('https://meu.ifmg.edu.br/EducaMobile/Educacional/EduAluno/GetNotasAvaliacao?tp=A', {
             "headers": {
                 "content-type": "application/x-www-form-urlencoded",
